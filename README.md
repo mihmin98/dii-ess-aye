@@ -1,5 +1,5 @@
 ## DII-ESS-AYE
-A janky EmulationStation theme for ROCKNIX meant to make the Anbernic RG DS and AYN Thor feel a bit more like a chunky DSi.
+A janky EmulationStation theme for ROCKNIX meant to make the Anbernic RG DS, Anbernic RG DS Plus, and AYN Thor feel a bit more like a chunky DSi.
 
 # Known Issues (that won't be fixed)
 1. Keyboard and horizontally longer popups are incorrectly sized.
@@ -14,8 +14,8 @@ A janky EmulationStation theme for ROCKNIX meant to make the Anbernic RG DS and 
   - Either connect to your network share and put it in the `themes` folder
   - Or copy it to `/STORAGE/.config/emulationstation/themes/` directly
 3. Copy only the enable script for your device from the repository's `scripts` folder into your `roms/ports` folder
-  - !!! NOTE: If you downloaded the theme as a zip, you may need to re-enable execution on the `enable_theme_*.sh` script either
-              after extraction on your computer or on the device via ssh. Use `chmod +x enable_theme_*.sh` for either method.
+  - !!! NOTE: If you downloaded the theme as a zip, you may need to re-enable execution on the `enable_dii-ess-aye_theme_*.sh` script either
+              after extraction on your computer or on the device via ssh. Use `chmod +x enable_dii-ess-aye_theme_*.sh` for either method.
 4. After updating your gamelists, open your ports section on your device and
   - Either run the enable script every time you want to enable the theme
     - (You will have to manually change the theme setting when you want to switch back)
@@ -24,7 +24,10 @@ A janky EmulationStation theme for ROCKNIX meant to make the Anbernic RG DS and 
 5. Enjoy?
 
 ### AYN Thor
-Use `enable_theme_thor.sh` from the `scripts` directory. It configures the rotated DSI-2 top panel and DSI-1 bottom panel, then launches EmulationStation on the Thor-specific virtual canvas. The theme includes a larger, 48px-equivalent top status bar so it remains legible on the top display.
+Use `enable_dii-ess-aye_theme_thor.sh` from the `scripts` directory. It configures the rotated DSI-2 top panel and DSI-1 bottom panel, then launches EmulationStation on the Thor-specific virtual canvas. The theme includes a larger, 48px-equivalent top status bar so it remains legible on the top display.
+
+### Anbernic RG DS Plus
+Use `enable_dii-ess-aye_theme_rgdsplus.sh` from the `scripts` directory. It places the DSI-2 top panel and DSI-1 bottom panel side by side, then launches EmulationStation on a 3072x768 canvas (three 1024x768 screens), reusing the RG DS layout. Requires a ROCKNIX build with RG DS Plus support. Do not use the RG DS scripts on the Plus.
 
 ### Uninstall
 1. If your enable script is set to auto start: Start Menu -> System Settings -> Frontend Developer Options -> Stop Running This Game At Startup

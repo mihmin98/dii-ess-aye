@@ -3,8 +3,9 @@
     <formatVersion>7</formatVersion>
 
     <!--
-        Device: Anbernic RG DS
+        Device: Anbernic RG DS / Anbernic RG DS Plus
         Display: 1920x480 (three 640x480 screens horizontally spanned)
+        Display (Plus): 3072x768 (three 1024x768 screens horizontally spanned, same fractions as below)
         Top screen (left): X 0-0.333, center X=0.167
         Bottom screen (middle): X 0.333-0.666, center X=0.5
         Right screen (dummy): X 0.666-1.0, center X=0.833 (unused, background only)
@@ -47,6 +48,7 @@
             <w>0.3229</w><!-- 620 -->
             <h>0.05625</h><!-- 27 -->
             <separator>5</separator>
+            <separator if="${screen.width} == 3072">8</separator>
             <pos>0.0052083 0.0166667</pos><!-- 10 8 -->
         </stackpanel>
         <stackpanel name="system-indicators-left" extra="true">

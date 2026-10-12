@@ -2,6 +2,6 @@
 <theme>
     <formatVersion>7</formatVersion>
 
-    <include if="${screen.width} == 1920">./theme-rgds.xml</include>
-    <include if="${screen.width} != 1920">./theme-thor.xml</include>
+    <include if="${screen.width} == 1920 || ${screen.width} == 3072">./theme-rgds.xml</include>
+    <include if="${screen.width} != 1920 &amp;&amp; ${screen.width} != 3072">./theme-thor.xml</include>
 </theme>
